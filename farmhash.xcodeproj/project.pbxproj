@@ -6,8 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3AA5CFBF1911D0C500247B49 /* farmhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA5CFBE1911D0C500247B49 /* farmhash.h */; };
+		3AA5CFC11911D0EC00247B49 /* libfarmhash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA5CFC01911D0EC00247B49 /* libfarmhash.a */; };
+		3AA5CFC31911D14400247B49 /* farmhash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5CFC21911D14400247B49 /* farmhash.cc */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3AA5CFB41911D06200247B49 /* libfarmhash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfarmhash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA5CFBE1911D0C500247B49 /* farmhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = farmhash.h; sourceTree = "<group>"; };
+		3AA5CFC01911D0EC00247B49 /* libfarmhash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfarmhash.a; path = ../../../../../usr/local/lib/libfarmhash.a; sourceTree = "<group>"; };
+		3AA5CFC21911D14400247B49 /* farmhash.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = farmhash.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -15,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA5CFC11911D0EC00247B49 /* libfarmhash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,6 +34,9 @@
 		3AA5CFAB1911D06200247B49 = {
 			isa = PBXGroup;
 			children = (
+				3AA5CFC21911D14400247B49 /* farmhash.cc */,
+				3AA5CFC01911D0EC00247B49 /* libfarmhash.a */,
+				3AA5CFBE1911D0C500247B49 /* farmhash.h */,
 				3AA5CFB51911D06200247B49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +56,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA5CFBF1911D0C500247B49 /* farmhash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +110,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA5CFC31911D14400247B49 /* farmhash.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -184,6 +200,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
