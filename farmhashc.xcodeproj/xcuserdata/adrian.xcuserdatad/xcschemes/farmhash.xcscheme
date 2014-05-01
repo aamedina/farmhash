@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3AA5CFB31911D06200247B49"
                BuildableName = "libfarmhash.dylib"
-               BlueprintName = "farmhash"
-               ReferencedContainer = "container:farmhash.xcodeproj">
+               BlueprintName = "farmhashc"
+               ReferencedContainer = "container:farmhashc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

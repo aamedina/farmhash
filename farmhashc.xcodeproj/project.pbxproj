@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AA5CFBF1911D0C500247B49 /* farmhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA5CFBE1911D0C500247B49 /* farmhash.h */; };
-		3AA5CFC11911D0EC00247B49 /* libfarmhash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA5CFC01911D0EC00247B49 /* libfarmhash.a */; };
-		3AA5CFC31911D14400247B49 /* farmhash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5CFC21911D14400247B49 /* farmhash.cc */; };
+		3AA5CFC31911D14400247B49 /* farmhashc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5CFC21911D14400247B49 /* farmhashc.cc */; };
+		3AA5CFC71911D4A300247B49 /* libfarmhash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA5CFC61911D4A300247B49 /* libfarmhash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AA5CFB41911D06200247B49 /* libfarmhash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfarmhash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AA5CFBE1911D0C500247B49 /* farmhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = farmhash.h; sourceTree = "<group>"; };
-		3AA5CFC01911D0EC00247B49 /* libfarmhash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfarmhash.a; path = ../../../../../usr/local/lib/libfarmhash.a; sourceTree = "<group>"; };
-		3AA5CFC21911D14400247B49 /* farmhash.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = farmhash.cc; sourceTree = "<group>"; };
+		3AA5CFB41911D06200247B49 /* libfarmhashc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfarmhashc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA5CFC21911D14400247B49 /* farmhashc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = farmhashc.cc; sourceTree = "<group>"; };
+		3AA5CFC61911D4A300247B49 /* libfarmhash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfarmhash.a; path = ../../../../../usr/local/lib/libfarmhash.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,7 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA5CFC11911D0EC00247B49 /* libfarmhash.a in Frameworks */,
+				3AA5CFC71911D4A300247B49 /* libfarmhash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,9 +32,8 @@
 		3AA5CFAB1911D06200247B49 = {
 			isa = PBXGroup;
 			children = (
-				3AA5CFC21911D14400247B49 /* farmhash.cc */,
-				3AA5CFC01911D0EC00247B49 /* libfarmhash.a */,
-				3AA5CFBE1911D0C500247B49 /* farmhash.h */,
+				3AA5CFC61911D4A300247B49 /* libfarmhash.a */,
+				3AA5CFC21911D14400247B49 /* farmhashc.cc */,
 				3AA5CFB51911D06200247B49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,7 +41,7 @@
 		3AA5CFB51911D06200247B49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AA5CFB41911D06200247B49 /* libfarmhash.dylib */,
+				3AA5CFB41911D06200247B49 /* libfarmhashc.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,16 +53,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA5CFBF1911D0C500247B49 /* farmhash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3AA5CFB31911D06200247B49 /* farmhash */ = {
+		3AA5CFB31911D06200247B49 /* farmhashc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AA5CFB81911D06200247B49 /* Build configuration list for PBXNativeTarget "farmhash" */;
+			buildConfigurationList = 3AA5CFB81911D06200247B49 /* Build configuration list for PBXNativeTarget "farmhashc" */;
 			buildPhases = (
 				3AA5CFB01911D06200247B49 /* Sources */,
 				3AA5CFB11911D06200247B49 /* Frameworks */,
@@ -75,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = farmhash;
+			name = farmhashc;
 			productName = farmhash;
-			productReference = 3AA5CFB41911D06200247B49 /* libfarmhash.dylib */;
+			productReference = 3AA5CFB41911D06200247B49 /* libfarmhashc.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -88,7 +84,7 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 3AA5CFAF1911D06200247B49 /* Build configuration list for PBXProject "farmhash" */;
+			buildConfigurationList = 3AA5CFAF1911D06200247B49 /* Build configuration list for PBXProject "farmhashc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -100,7 +96,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AA5CFB31911D06200247B49 /* farmhash */,
+				3AA5CFB31911D06200247B49 /* farmhashc */,
 			);
 		};
 /* End PBXProject section */
@@ -110,7 +106,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA5CFC31911D14400247B49 /* farmhash.cc in Sources */,
+				3AA5CFC31911D14400247B49 /* farmhashc.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,25 +186,29 @@
 		3AA5CFB91911D06200247B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				EXECUTABLE_PREFIX = lib;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = farmhashc;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
 		3AA5CFBA1911D06200247B49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				EXECUTABLE_PREFIX = lib;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = farmhashc;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AA5CFAF1911D06200247B49 /* Build configuration list for PBXProject "farmhash" */ = {
+		3AA5CFAF1911D06200247B49 /* Build configuration list for PBXProject "farmhashc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA5CFB61911D06200247B49 /* Debug */,
@@ -217,7 +217,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AA5CFB81911D06200247B49 /* Build configuration list for PBXNativeTarget "farmhash" */ = {
+		3AA5CFB81911D06200247B49 /* Build configuration list for PBXNativeTarget "farmhashc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA5CFB91911D06200247B49 /* Debug */,
